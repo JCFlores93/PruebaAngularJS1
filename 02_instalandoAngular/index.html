@@ -1,0 +1,21 @@
+<!doctype html>
+<!--aplicacion de angular con ng-app-->
+<html ng-app>
+    <head>
+        <meta charset="utf-08">
+        <title><!--Instalando-->Filtros en AngularJS</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    </head>
+    <body>
+       <!-- <h1>curso de AngualrJS</h1>
+        Insertar expresiones
+        <p>{{10}}días del año</p>
+        <p>{{3*8}}</p>-->
+        <h1>Mi tienda de verduras</h1>
+        <ul>
+            <li>Apio {{ 50 | currency }}</li>
+            <li>Brocoli {{ 50 | currency : "euros"}}</li>
+            <li>Espinaca {{ 50 + 10 | currency : "centavos"}} importada de {{ 'INdia' | uppercase }}</li>
+        </ul>
+    </body>
+</html>
